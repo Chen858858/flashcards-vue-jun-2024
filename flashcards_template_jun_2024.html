@@ -154,7 +154,7 @@
         this.showFront = true;
         if(this.currSetIdxs.length == 0){
           this.currCardVal = {"front": null, "back": null};
-          this.incorrectCards = {... this.incorrectCardsTemp};
+          this.incorrectCards = this.incorrectCardsTemp;
           return;
         }
         const idx = Math.floor(Math.random() * this.currSetIdxs.length);
@@ -165,7 +165,7 @@
         this.showFront = true;
         if(this.currSetIdxs.length == 0){
           this.currCardVal = {"front": null, "back": null};
-          this.incorrectCards = {... this.incorrectCardsTemp};
+          this.incorrectCards = this.incorrectCardsTemp;
           return;
         }
         const idx = Math.floor(Math.random() * this.currSetIdxs.length);
