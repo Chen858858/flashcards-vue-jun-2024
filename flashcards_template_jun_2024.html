@@ -83,7 +83,7 @@
       </div>
       <div style="text-align: center;">
         {{correct}} out of {{correct + incorrect}} correct.
-        <div v-if="currCardVal['front']">
+        <div style="margin-bottom: 32px;" v-if="currCardVal['front']">
           <button class="btn half-btn correct-btn" @click="correct++; genCard();">
             <i class="fa-solid fa-check"></i> Correct
           </button>
